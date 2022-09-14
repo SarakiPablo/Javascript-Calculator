@@ -22,7 +22,6 @@ btnSpread.forEach((button, i) => {
   });
 });
 
-
 // Function to evalute Strings
 function evaluate(fn) {
     return new Function('return ' + fn)();
@@ -37,7 +36,7 @@ resultBox.innerHTML = evaluate(allInputs);
 console.log(evaluate(allInputs));
 })
 
-// Clear all Inputs
+// Clear All Inputs
 clearBtn.addEventListener('click', ()=> {
     resultBox.innerHTML = "0";
 })
